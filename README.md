@@ -1,6 +1,6 @@
 # Projet Casino — Craps
 
-1. Présentation
+# 1. Présentation
 
 Ce projet consiste à développer un jeu de casino en Python dans le cadre d'un projet de programmation.
 
@@ -22,7 +22,7 @@ de simuler un grand nombre de parties avec une méthode esperance() ;
 
 d'utiliser une stratégie de mise configurable.
 
-2. Règles du Craps utilisées
+# 2. Règles du Craps utilisées
 
 Le jeu utilise deux dés à six faces.
 
@@ -86,7 +86,7 @@ Total : 5
 Total : 7
 perte
 
-3. Structure du projet
+# 3. Structure du projet
 
 Le projet contient notamment :
 
@@ -114,7 +114,7 @@ Projet_casino.md
 
 Ce fichier contient les consignes générales du projet.
 
-4. Classe Craps
+# 4. Classe Craps
 
 La classe Craps contient les règles du jeu, la gestion du joueur, la stratégie de mise, le bot et le calcul de l'espérance.
 
@@ -154,7 +154,7 @@ nombre d'essais : 1 ;
 
 multiplicateur après une perte : 2.
 
-5. Méthode lancer_des()
+# 5. Méthode lancer_des()
 
 La méthode :
 
@@ -178,7 +178,7 @@ return total
 
 Lorsque manuel=True, le programme attend que l'utilisateur appuie sur Entrée avant de lancer les dés.
 
-6. Méthode joueur()
+# 6. Méthode joueur()
 
 La méthode :
 
@@ -214,7 +214,7 @@ le point réapparaisse → gain ;
 
 un 7 apparaisse → perte.
 
-7. Méthode mise()
+# 7. Méthode mise()
 
 La méthode :
 
@@ -234,7 +234,7 @@ retourne :
 
 10
 
-8. Méthode bot()
+# 8. Méthode bot()
 
 La méthode :
 
@@ -283,7 +283,7 @@ Avec une mise initiale de 10 € et un multiplicateur de 2, les mises peuvent do
 
 Cette logique correspond à une progression de mise de type Martingale.
 
-9. Méthode esperance()
+# 9. Méthode esperance()
 
 La méthode :
 
@@ -315,7 +315,7 @@ cela signifie qu'en moyenne, sur un grand nombre de parties simulées, le joueur
 
 Une espérance négative ne signifie pas que chaque partie est perdue. Certaines parties peuvent être gagnantes et d'autres perdantes.
 
-10. Loi des grands nombres
+# 10. Loi des grands nombres
 
 L'objectif de esperance() est d'utiliser la loi des grands nombres.
 
@@ -333,7 +333,7 @@ Les résultats peuvent varier fortement avec peu de parties.
 
 Avec davantage de simulations, la moyenne devient généralement plus stable.
 
-11. Exemple d'utilisation
+# 11. Exemple d'utilisation
 
 Le programme crée une instance de Craps :
 
@@ -361,7 +361,7 @@ Enfin, l'espérance peut être calculée avec :
 
 print("Espérance :", craps.esperance())
 
-12. Exemple de déroulement
+# 12. Exemple de déroulement
 
 Une partie peut produire :
 
@@ -398,7 +398,7 @@ perte
 
 Joueur : perte
 
-13. Probabilités du premier lancer
+# 13. Probabilités du premier lancer
 
 Avec deux dés à six faces, il existe 36 combinaisons possibles.
 
@@ -484,7 +484,7 @@ perte immédiate avec 2, 3 ou 12 ;
 
 établissement d'un point avec 4, 5, 6, 8, 9 ou 10.
 
-14. Stratégie de mise
+# 14. Stratégie de mise
 
 La stratégie par défaut est :
 
@@ -508,7 +508,7 @@ craps = Craps(strategie=strategie)
 
 La mise initiale est alors de 20 €.
 
-15. Limites de la stratégie Martingale
+# 15. Limites de la stratégie Martingale
 
 La progression utilisée par le bot augmente fortement les mises après une perte.
 
@@ -535,7 +535,7 @@ le nombre de pertes consécutives.
 
 La stratégie ne supprime donc pas le risque de perte.
 
-16. Installation
+# 16. Installation
 
 Le projet utilise la bibliothèque standard Python.
 
@@ -547,7 +547,7 @@ Pour vérifier l'installation :
 
 python --version
 
-17. Lancer le programme
+# 17. Lancer le programme
 
 Depuis le dossier contenant craps.py :
 
@@ -555,7 +555,7 @@ python craps.py
 
 Le programme demande ensuite d'appuyer sur Entrée pour lancer les dés.
 
-18. Technologies utilisées
+# 18. Technologies utilisées
 
 Le projet utilise principalement :
 
@@ -581,7 +581,7 @@ l'estimation d'une espérance par simulation.
 
 La bibliothèque random fait partie de la bibliothèque standard de Python.
 
-19. Objectifs pédagogiques
+# 19. Objectifs pédagogiques
 
 Ce projet permet de travailler plusieurs notions de programmation :
 
@@ -619,7 +619,7 @@ Stratégie
 
 La mise peut être modifiée après une victoire ou une défaite.
 
-20. Conclusion
+# 20. Conclusion
 
 Ce projet permet de reproduire une version simplifiée du Craps sous forme d'un programme Python.
 
